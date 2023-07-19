@@ -1,0 +1,5 @@
+{
+    "files.associations": {
+        "git/.gitignore.*": "properties"
+    }
+}
