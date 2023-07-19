@@ -2,8 +2,4 @@
 
 set -e
 
-DOTFILES_LOCATION=$(pwd)
-export DOTFILES_LOCATION;
-
-./bin/dotfiles install git
-./bin/dotfiles install oh-my-posh
+sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply labmonkey42

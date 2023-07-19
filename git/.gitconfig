@@ -1,8 +1,0 @@
-[user]
-useConfigOnly = true
-
-[pull]
-rebase = true
-
-[includeIf "hasconfig:remote.*.url:git@github.com:labmonkey42/**"]
-path = ~/.gitconfig.personal
