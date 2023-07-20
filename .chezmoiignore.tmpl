@@ -1,0 +1,10 @@
+README.md
+
+{{- if eq "" (output "which" "git") }}
+.gitconfig
+.gitconfig.*
+{{- end }}
+
+{{- if eq "" (output "which" "kubectl") }}
+.kube
+{{- end }}
