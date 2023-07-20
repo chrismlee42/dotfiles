@@ -1,0 +1,29 @@
+{
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",
+    "name": "dotfiles",
+    "remoteUser": "vscode",
+    "workspaceFolder": "/home/vscode/dotfiles",
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/vscode/dotfiles,type=bind,consistency=cached",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                // Standardize editor configuration
+                "EditorConfig.EditorConfig",
+                // Useful for documentation
+                "davidanson.vscode-markdownlint",
+                // text/template support
+                "jinliming2.vscode-go-template",
+                // Support interacting with running devcontainers
+                "ms-azuretools.vscode-docker",
+                "ms-vscode-remote.remote-containers",
+                // YAML support
+                "redhat.vscode-yaml"
+            ]
+        }
+    },
+    "runArgs": [
+        // devcontainer.json does not (yet) support specifying container networks
+        // see: https://github.com/microsoft/vscode-remote-release/issues/4272
+        "--network=host"
+    ]
+}
