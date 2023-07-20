@@ -114,6 +114,8 @@ if ! shopt -oq posix; then
   fi
 fi
 
+export PATH="~/bin:${PATH}"
+
 #export TF_LOG_PATH="terraform.log"
 
 export KUBECONFIG=$HOME/.kube/config
@@ -123,7 +125,8 @@ done
 
 export DOCKER_BUILDKIT=1
 
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(oh-my-posh init bash --config ~/.omp.json)"
+
 source <(oh-my-posh completion bash 2>>/dev/null)
 complete -C `which aws_completer` aws 2>>/dev/null
 source <(helm completion bash 2>>/dev/null)
@@ -132,4 +135,3 @@ complete -C /usr/bin/terraform terraform 2>>/dev/null
 source <(npm completion 2>>/dev/null)
 source <(cdktf completion 2>>/dev/null)
 source <(projen completion 2>>/dev/null)
-eval "$(oh-my-posh init bash --config ~/.omp.json)"
