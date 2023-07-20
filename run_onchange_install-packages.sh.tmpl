@@ -4,4 +4,8 @@
 if [ -z $(which oh-my-posh) ]; then
     curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/bin
 fi
+
+{{ if eq .chezmoi.idLike "debian" -}}
+sudo apt install -y bash-completion
+{{ end -}}
 {{ end -}}
