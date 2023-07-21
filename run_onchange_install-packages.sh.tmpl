@@ -1,7 +1,7 @@
 {{ if eq .chezmoi.os "linux" -}}
 #!/usr/bin/env bash
 
-{{ if eq .chezmoi.osRelease.idLike "debian" -}}
+{{ if has .chezmoi.osRelease.id "debian" "ubuntu" -}}
 sudo apt install -y bash-completion
 
 ## 1Password CLI
