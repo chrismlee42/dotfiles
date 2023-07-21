@@ -1,10 +1,10 @@
 README.md
 
-{{- if eq "" (output "which" "git") }}
+{{- if eq "" (lookpath git) }}
 .gitconfig
 .gitconfig.*
 {{- end }}
 
-{{- if eq "" (output "which" "kubectl") }}
+{{- if eq "" (lookPath kubectl) }}
 .kube
 {{- end }}
