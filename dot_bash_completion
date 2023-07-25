@@ -1,3 +1,7 @@
+for f in ~/.bash_completion.d/* ; do
+  . $f
+done
+
 complete -C `which aws_completer` aws 2>>/dev/null
 source <(cdktf completion 2>>/dev/null)
 source <(chezmoi completion bash 2>>/dev/null)
