@@ -2,7 +2,7 @@ for f in ~/.bash_completion.d/* ; do
   . $f
 done
 
-if [ $(type -t __reassemble_comp_words_by_ref) != function ]; then
+if [[ $(type -t __reassemble_comp_words_by_ref) != function ]]; then
     # Reassemble command line words, excluding specified characters from the
     # list of word completion separators (COMP_WORDBREAKS).
     # @param $1 chars  Characters out of $COMP_WORDBREAKS which should
@@ -71,7 +71,7 @@ if [ $(type -t __reassemble_comp_words_by_ref) != function ]; then
     } # __reassemble_comp_words_by_ref()
 fi
 
-if [ $(type -t __get_cword_at_cursor_by_ref) != function ]; then
+if [[ $(type -t __get_cword_at_cursor_by_ref) != function ]]; then
     # @param $1 exclude  Characters out of $COMP_WORDBREAKS which should NOT be
     #     considered word breaks. This is useful for things like scp where
     #     we want to return host:path and not only path, so we would pass the
@@ -118,7 +118,7 @@ if [ $(type -t __get_cword_at_cursor_by_ref) != function ]; then
             -v $3 "$cword" -v $4 "${cur:0:index}"
     }
 fi
-if [ $(type -t _get_comp_words_by_ref) != function ]; then
+if [[ $(type -t _get_comp_words_by_ref) != function ]]; then
     # Get the word to complete and optional previous words.
     # This is nicer than ${COMP_WORDS[COMP_CWORD]}, since it handles cases
     # where the user is completing in the middle of a word.
