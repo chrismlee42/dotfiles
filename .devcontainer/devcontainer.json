@@ -21,6 +21,10 @@
             ]
         }
     },
+    "mounts": [
+        // Support user 1password sessions
+        "source=${localEnv:HOME}${localEnv:USERPROFILE}/.1password,target=/home/vscode/.1password,type=bind,consistency=cached"
+    ],
     "runArgs": [
         // devcontainer.json does not (yet) support specifying container networks
         // see: https://github.com/microsoft/vscode-remote-release/issues/4272
