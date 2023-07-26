@@ -5,7 +5,7 @@ contexts: null
 {{ if ne "" (lookPath "kubectl") -}}
 current-context: {{ output "kubectl" "config" "current-context" | trim -}}
 {{ else -}}
-current-context: null
+current-context: ""
 {{ end -}}
 kind: Config
 preferences: {}
