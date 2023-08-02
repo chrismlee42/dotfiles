@@ -123,7 +123,7 @@ export PATH="$HOME/bin:$HOME/.local/bin:${PATH}"
 
 nullglobState=$(shopt -p nullglob)
 export KUBECONFIG=$HOME/.kube/config
-for extra_kubeconfig in $HOME/.kube/clusters/*.{yaml|yml}; do
+for extra_kubeconfig in $HOME/.kube/clusters/*.{yaml,yml}; do
   export KUBECONFIG=$KUBECONFIG:$extra_kubeconfig
 done
 eval $nullglobState
