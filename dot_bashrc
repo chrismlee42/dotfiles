@@ -121,10 +121,12 @@ export PATH="$HOME/bin:$HOME/.local/bin:${PATH}"
 
 #export TF_LOG_PATH="terraform.log"
 
+nullglobState=$(shopt -p nullglob)
 export KUBECONFIG=$HOME/.kube/config
-for extra_kubeconfig in $HOME/.kube/clusters/*.yaml; do
+for extra_kubeconfig in $HOME/.kube/clusters/*.{yaml|yml}; do
   export KUBECONFIG=$KUBECONFIG:$extra_kubeconfig
 done
+eval $nullglobState
 
 export DOCKER_BUILDKIT=1
 
