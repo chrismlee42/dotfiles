@@ -4,5 +4,20 @@
 [pull]
 	rebase = true
 
+[includeIf "hasconfig:remote.*.url:git@github.com:chrismlee42/**"]
+	path = ~/.gitconfig.personal
+
 [includeIf "hasconfig:remote.*.url:git@github.com:labmonkey42/**"]
+	path = ~/.gitconfig.personal
+
+[includeIf "hasconfig:remote.*.url:git@github.com:morphacy/**"]
+	path = ~/.gitconfig.personal
+
+[includeIf "hasconfig:remote.*.url:git@gitlab.com:chrismlee42/**"]
+	path = ~/.gitconfig.personal
+
+[includeIf "hasconfig:remote.*.url:git@gitlab.com:labmonkey42/**"]
+	path = ~/.gitconfig.personal
+
+[includeIf "hasconfig:remote.*.url:git@gitlab.com:morphacy/**"]
 	path = ~/.gitconfig.personal
