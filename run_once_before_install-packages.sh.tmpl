@@ -6,7 +6,7 @@
 {{ end -}}
 
 if [ -z $(which starship) ]; then
-    curl -sS https://starship.rs/install.sh | sh -s -- -b ~/.local/bin
+    curl -sS https://starship.rs/install.sh | sh -s -- --yes -b ~/.local/bin
 fi
 
 if [ -z $(which oh-my-posh) ]; then
