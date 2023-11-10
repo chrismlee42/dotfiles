@@ -2,11 +2,11 @@
 #!/usr/bin/env bash
 
 {{ if (or (eq .chezmoi.osRelease.id "debian") (eq .chezmoi.osRelease.id "ubuntu")) -}}
-sudo apt install -y bash-completion
+#sudo apt install -y bash-completion
 {{ end -}}
 
 if [ -z $(which starship) ]; then
-    curl -sS https://starship.rs/install.sh | sh
+    curl -sS https://starship.rs/install.sh | sh -s -- -b ~/.local/bin
 fi
 
 if [ -z $(which oh-my-posh) ]; then
