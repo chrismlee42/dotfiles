@@ -4,6 +4,7 @@ done
 
 complete -C `which aws_completer` aws 2>>/dev/null
 source <(cdktf completion 2>>/dev/null)
+source <(cilium completion 2>>/dev/null)
 source <(docker completion bash 2>>/dev/null)
 source <(helm completion bash 2>>/dev/null)
 source <(kubectl completion bash 2>>/dev/null)
