@@ -105,10 +105,14 @@
 #[ ](fg:#1d2230)\
 #\n$character"""
 
+continuation_prompt = '▶▶ '
+
 format = """
+[\ue0b6](fg:#212736)\
+[$time](fg:#212736 bg:#1d2230)\
 \ue0b2\
 $os\
-[\ue0b0](bg:#073278 fg:#e4e4e4)\
+[\ue0b2](bg:#e4e4e4 fg:#073278)\
 [ $username @ $hostname ](bg:#073278 fg:#e4e4e4)\
 [\ue0b0](bg:#3465a4 fg:#073278)\
 $directory\
@@ -118,15 +122,22 @@ $shell\
 $git_branch\
 $git_status\
 [\ue0b0](bg:#212736 fg:#4e9a06)\
-[](fg:#394260 bg:#212736)\
+[\ue0b0](bg:#212736 fg:#394260)\
 $nodejs\
 $rust\
 $golang\
 $php\
-[](fg:#212736 bg:#1d2230)\
-$time\
-[ ](fg:#1d2230)\
-\n$character"""
+[\ue0b0](bg:#1d2230 fg:#212736)\
+$status\
+$cmd_duration\
+[\ue0b4 ](fg:#1d2230)
+$character"""
+
+[cmd_duration]
+format = "[:](bg:#1d2230 fg:#212736)[ $duration ]($style)"
+min_time = 200
+show_milliseconds = true
+style = "fg:#9b9b9b bg:#1d2230"
 
 [directory]
 style = "bg:#3465a4 fg:#e4e4e4"
@@ -144,7 +155,7 @@ truncation_symbol = "…/"
 [git_branch]
 symbol = ""
 style = "bg:#4e9a06 fg:#000000"
-format = '[[ $symbol $branch ](bg:#4e9a06 fg:#000000)]($style)'
+format = '[[ $symbol $branch(:$remote_branch) ](bg:#4e9a06 fg:#000000)]($style)'
 
 [git_status]
 style = "bg:#4e9a06 fg:#000000"
@@ -233,11 +244,20 @@ format = '[ $indicator ]($style)'
 powershell_indicator = ''
 style = "bg:#073278 fg:#e4e4e4"
 
+[status]
+disabled = false
+format = "[ $signal_name $symbol ]($style)"
+map_symbol = true
+sigint_symbol = "[✗](bg:#1d2230 fg:#d60202)"
+style = "bg:#1d2230"
+success_symbol = "[✓](bg:#1d2230 fg:green)"
+symbol = "[✗](bg:#1d2230 fg:#d60202)"
+
 [time]
 disabled = false
-format = '[[  $time ](fg:#a0a9cb bg:#1d2230)]($style)'
+format = '[[ $time ](fg:#a0a9cb bg:#1d2230)]($style)'
 style = "bg:#1d2230"
-time_format = "%T"
+time_format = "%T  %d-%b-%Y"
 
 [username]
 disabled = false
