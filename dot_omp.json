@@ -28,7 +28,7 @@
           "foreground": "#e4e4e4",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
-          "template": " {{ .UserName }} @ {{ .HostName }} ",
+          "template": " {{ .UserName }} @ {{ .HostName }}{{ if .SSHSession }} \uf819{{ end }} ",
           "type": "session"
         },
         {
