@@ -52,7 +52,7 @@
           "type": "root"
         },
         {
-          "background": "#073278",
+          "background": "#1d2230",
           "foreground": "#e4e4e4",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
