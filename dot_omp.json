@@ -164,7 +164,7 @@
         },
         {
           "background": "#1d2230",
-          "foreground": "#000000",
+          "foreground": "#a0a9cb",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
           "template": " {{ .FormattedMs }} \uf252 ",
