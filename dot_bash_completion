@@ -2,7 +2,7 @@ for f in ~/.bash_completion.d/* ; do
   . $f
 done
 
-complete -C `which aws_completer` aws 2>>/dev/null
+complete -C `which aws_completer 2>>/dev/null` awx 2>>/dev/null
 source <(cdktf completion 2>>/dev/null)
 source <(cilium completion 2>>/dev/null)
 source <(docker completion bash 2>>/dev/null)
@@ -16,4 +16,4 @@ source <(oh-my-posh completion bash 2>>/dev/null)
 source <(op completion 2>>/dev/null)
 source <(pip completion --bash 2>>/dev/null)
 source <(projen completion bash 2>>/dev/null)
-complete -C `which terraform` terraform 2>>/dev/null
+terraform -install-autocomplete 2>>/dev/null
