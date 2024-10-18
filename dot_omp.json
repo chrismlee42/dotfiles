@@ -211,6 +211,7 @@
       "type": "prompt"
     }
   ],
+  "auto_update": true,
   "console_title_template": "{{.UserName}}@{{.HostName}}:{{.PWD}}{{if eq .Shell \"pwsh\"}}{{if .Root}} (Elevated){{end}} >{{end}}{{if eq .Shell \"bash\"}}{{if .Root}} #{{end}}{{if not .Root}} ${{end}}{{end}}",
   "final_space": true,
   "version": 3
