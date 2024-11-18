@@ -225,7 +225,7 @@
           "foreground": "#ffffff",
           "powerline_symbol": "\ue0b0",
           "style": "powerline",
-          "template": " \ue782 {{.Project}} :: {{.Account}} ",
+          "template": " \ue7b2 {{.Project}} :: {{.Account}} ",
           "type": "gcp"
         },
         {
