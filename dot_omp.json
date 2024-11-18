@@ -69,14 +69,6 @@
           "style": "powerline",
           "type": "shell"
         },
-        // {
-        //   "background": "#1d2230",
-        //   "foreground": "#e4e4e4",
-        //   "powerline_symbol": "\ue0b0",
-        //   "style": "powerline",
-        //   "template": "\uf292 ",
-        //   "type": "root"
-        // },
         {
           "background": "#4e9a06",
           "background_templates": [
