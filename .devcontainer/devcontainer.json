@@ -1,9 +1,6 @@
 {
     "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",
     "name": "dotfiles",
-    "remoteUser": "vscode",
-    "workspaceFolder": "/home/vscode/dotfiles",
-    "workspaceMount": "source=${localWorkspaceFolder},target=/home/vscode/dotfiles,type=bind,consistency=cached",
     "customizations": {
         "vscode": {
             "extensions": [
