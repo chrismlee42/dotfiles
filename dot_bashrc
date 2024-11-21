@@ -125,5 +125,9 @@ fi
 
 export DOCKER_BUILDKIT=1
 
+alias chezmoi=~/bin/chezmoi
+alias oh-my-posh=~/bin/oh-my-posh
+#alias starship=~/bin/starship
+
 eval "$(oh-my-posh init bash --config ~/.omp.json)"
 #eval "$(starship init bash)"
