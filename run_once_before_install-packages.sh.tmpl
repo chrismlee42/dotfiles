@@ -6,10 +6,10 @@
 {{ end -}}
 
 #if [ -z $(which starship) ]; then
-#    curl -sS https://starship.rs/install.sh | sh -s -- --yes -b ~/.local/bin
+#    curl -sS https://starship.rs/install.sh | sh -s -- --yes -b ~/bin
 #fi
 
 if [ -z $(which oh-my-posh) ]; then
-    curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/.local/bin
+    curl -s https://ohmyposh.dev/install.sh | bash -s -- -d ~/bin
 fi
 {{ end -}}
