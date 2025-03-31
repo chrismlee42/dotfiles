@@ -13,6 +13,9 @@
 [includeIf "hasconfig:remote.*.url:git@github.com:morphacy/**"]
 	path = ~/.gitconfig.personal
 
+[includeIf "hasconfig:remote.*.url:git@github.com:mutinysoftware/**"]
+	path = ~/.gitconfig.personal
+
 [includeIf "hasconfig:remote.*.url:git@gitlab.com:chrismlee42/**"]
 	path = ~/.gitconfig.personal
 
@@ -22,8 +25,5 @@
 [includeIf "hasconfig:remote.*.url:git@gitlab.com:morphacy/**"]
 	path = ~/.gitconfig.personal
 
-[includeIf "hasconfig:remote.*.url:git@gitlab.com:banno/**"]
-	path = ~/.gitconfig.jackhenry
-
-[includeIf "hasconfig:remote.*.url:git@gitlab.com:ensenta/**"]
-	path = ~/.gitconfig.jackhenry
+[includeIf "hasconfig:remote.*.url:git@gitlab.com:mutinysoftware/**"]
+	path = ~/.gitconfig.personal
