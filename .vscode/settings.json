@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "git/.gitignore.*": "properties"
+        "git/.gitignore.*": "properties",
+        "dot_bashrc.*": "shellscript",
     }
 }

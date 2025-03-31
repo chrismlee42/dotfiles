@@ -121,7 +121,7 @@ fi
 
 #export TF_LOG_PATH="terraform.log"
 
-. ~/.kube.bashrc
+. ~/.bashrc.kube
 
 export DOCKER_BUILDKIT=1
 
