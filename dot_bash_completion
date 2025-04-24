@@ -17,4 +17,6 @@ source <(oh-my-posh completion bash 2>>/dev/null)
 source <(op completion 2>>/dev/null)
 source <(pip completion --bash 2>>/dev/null)
 source <(projen completion bash 2>>/dev/null)
+source <(rustup completions bash 2>>/dev/null)
+source <(rustup completions bash cargo 2>>/dev/null)
 terraform -install-autocomplete 2>>/dev/null
