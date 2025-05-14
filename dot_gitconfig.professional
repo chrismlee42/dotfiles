@@ -1,0 +1,13 @@
+[commit]
+    gpgsign = true
+
+[core]
+    sshCommand = ssh -i ~/.ssh/identities/chrismlee42_gmail_com.ed25519.pub
+
+[gpg]
+	format = ssh
+
+[user]
+	email = chrismlee42@gmail.com
+	name = Chris Lee
+	signingKey = ~/.ssh/identities/chrismlee42_gmail_com.ed25519.pub
