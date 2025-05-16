@@ -2,7 +2,7 @@
     gpgsign = true
 
 [core]
-    sshCommand = ssh -i ~/.ssh/identities/labmonkey42_gmail_com.rsa.pub
+    sshCommand = ssh -i ~/.ssh/identities/labmonkey42_gmail_com.rsa
 
 [gpg]
 	format = ssh
@@ -10,4 +10,4 @@
 [user]
 	email = labmonkey42@gmail.com
 	name = Chris Lee
-	signingKey = ~/.ssh/identities/labmonkey42_gmail_com.rsa.pub
+	signingKey = ~/.ssh/identities/labmonkey42_gmail_com.rsa
