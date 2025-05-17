@@ -1,4 +1,5 @@
-for f in ~/.bash_completion.d/* ; do
+for f in ~/.bash_completion.d/*
+do
   . $f
 done
 
