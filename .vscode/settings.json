@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.sh.tmpl": "shellscript",
         "git/.gitignore.*": "properties",
         "dot_bashrc.*": "shellscript",
     }
