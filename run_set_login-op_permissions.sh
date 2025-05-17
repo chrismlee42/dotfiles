@@ -1,6 +1,6 @@
 #!/bin/sh
 
-FILE="$HOME/.login-op"
+FILE="$HOME/bin/login-op"
 if [ -f "$FILE" ]
 then
     if [ "$(stat -c %a "$FILE")" != "750" ]
