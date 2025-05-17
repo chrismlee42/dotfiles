@@ -1,3 +1,3 @@
 #! /usr/bin/env bash
-op account add --email labmonkey42@gmail.com --shorthand personal --signin
-op account add --email chrismlee42@gmail.com --shorthand professional --signin
+eval $(op account add --address my.1password.com --email labmonkey42@gmail.com --shorthand personal --signin)
+eval $(op account add --address my.1password.com --email chrismlee42@gmail.com --shorthand professional --signin)
