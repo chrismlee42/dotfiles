@@ -16,7 +16,7 @@ eval "$(_MOLECULE_COMPLETE=bash_source molecule 2>>/dev/null)"
 source <(nerdctl nerdctl bash 2>>/dev/null)
 source <(npm completion 2>>/dev/null)
 source <(oh-my-posh completion bash 2>>/dev/null)
-source <(op completion 2>>/dev/null)
+source <(op completion bash 2>>/dev/null)
 source <(pip completion --bash 2>>/dev/null)
 source <(projen completion bash 2>>/dev/null)
 source <(rustup completions bash 2>>/dev/null)
