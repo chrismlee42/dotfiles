@@ -1,8 +1,11 @@
-[user]
-	useConfigOnly = true
+[core]
+    sshCommand = ssh -i ~/.ssh/identities/chrismlee42_gmail_com.rsa
 
 [pull]
 	rebase = true
+
+[user]
+	useConfigOnly = true
 
 [includeIf "hasconfig:remote.*.url:git@github.com:chrismlee42-dev/**"]
 	path = ~/.gitconfig.professional
