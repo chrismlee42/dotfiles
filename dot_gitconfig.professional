@@ -5,9 +5,9 @@
     sshCommand = ssh -i ~/.ssh/identities/chrismlee42_gmail_com.ed25519
 
 [gpg]
-	format = ssh
+    format = ssh
 
 [user]
-	email = chrismlee42@gmail.com
-	name = Chris Lee
-	signingKey = ~/.ssh/identities/chrismlee42_gmail_com.ed25519
+    email = chrismlee42@gmail.com
+    name = Chris Lee
+    signingKey = ~/.ssh/identities/chrismlee42_gmail_com.ed25519
