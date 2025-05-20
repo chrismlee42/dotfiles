@@ -1,5 +1,5 @@
 [core]
-    sshCommand = ssh -i ~/.ssh/identities/chrismlee42_gmail_com.rsa
+    sshCommand = ssh -i ~/.ssh/identities/chrismlee42_gmail_com.ed25519
 
 [pull]
     rebase = true
