@@ -116,7 +116,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-#export PATH="$HOME/bin:$HOME/.local/bin:${PATH}"
+export PATH="$HOME/bin:$HOME/.local/bin:${PATH}"
 
 #export TF_LOG_PATH="terraform.log"
 
