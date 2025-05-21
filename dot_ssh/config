@@ -1,0 +1,33 @@
+# GitHub
+Host github.com
+    AddKeysToAgent yes
+    Compression yes
+    ControlPath no
+    ControlMaster no
+    ControlPersist no
+    ForwardAgent yes
+    Hostname github.com
+    IdentitiesOnly yes
+    PreferredAuthentications publickey
+
+# Gitlab
+Host gitlab.com
+    AddKeysToAgent yes
+    Compression yes
+    ControlPath no
+    ControlMaster no
+    ControlPersist no
+    ForwardAgent yes
+    Hostname gitlab.com
+    IdentitiesOnly yes
+    PreferredAuthentications publickey
+
+Host * !github.com !gitlab.com
+    AddKeysToAgent yes
+    Compression yes
+    #ControlPath ~/.ssh/controlmasters/%r@%h:%p
+    #ControlMaster auto
+    #ControlPersist 10m
+    ForwardAgent yes
+    IdentityFile ~/.ssh/identities/labmonkey42_gmail_com.rsa
+    PreferredAuthentications publickey

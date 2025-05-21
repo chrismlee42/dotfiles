@@ -3,5 +3,6 @@
         "*.sh.tmpl": "shellscript",
         "git/.gitignore.*": "properties",
         "dot_bashrc.*": "shellscript",
+        "dot_ssh/config": "ssh_config",
     }
 }
