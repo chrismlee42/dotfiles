@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 declare -A FILE_MODES=(
     ["$HOME/.local/bin/login-op"]="700"
