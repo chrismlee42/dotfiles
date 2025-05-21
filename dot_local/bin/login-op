@@ -1,3 +1,12 @@
 #! /usr/bin/env bash
 eval $(op account add --address my.1password.com --email labmonkey42@gmail.com --shorthand personal --signin)
 eval $(op account add --address my.1password.com --email chrismlee42@gmail.com --shorthand professional --signin)
+
+for file in ~/.ssh/identities/*
+do
+    op inject --in-file "${file}" | \
+    while read -r line
+    do
+      eval "${line}"
+    done
+done
