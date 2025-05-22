@@ -1,5 +1,5 @@
 #! /usr/bin/env bash
-eval $(op account add --address my.1password.com --email chrismlee42@gmail.com --shorthand professional --signin)
+eval $(op account add --address my.1password.com --email labmonkey42@gmail.com --shorthand personal --signin)
 
 for file in ~/.ssh/identities/*
 do
