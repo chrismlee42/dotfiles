@@ -25,7 +25,7 @@
         {
           "background": "#d3d7cf",
           "foreground": "#000000",
-          "invert_powerline": true,
+          // "invert_powerline": true,
           "powerline_symbol": "\ue0b2",
           "style": "powerline",
           "type": "os"
