@@ -7,7 +7,7 @@
 [user]
     useConfigOnly = true
 
-[includeIf "hasconfig:remote.*.url:git@github.com:chrismlee42-dev/**"]
+[includeIf "hasconfig:remote.*.url:git@github.com:chrismlee42/**"]
     path = ~/.gitconfig.professional
 
 [includeIf "hasconfig:remote.*.url:git@github.com:labmonkey42/**"]
