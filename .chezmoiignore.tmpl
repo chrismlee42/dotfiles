@@ -1,6 +1,13 @@
 README.md
 install.sh
 
+{{- if eq .chezmoi.os "windows" }}
+.bash_completion
+.bash_completion.d
+.bashrc
+.bashrc.kube
+{{- end }}
+
 {{- if eq "" (lookPath "git") }}
 .gitconfig
 .gitconfig.*
