@@ -13,6 +13,6 @@ if (!(Get-Command oh-my-posh -errorAction SilentlyContinue))
 }
 
 Write-Output "Running chezmoi"
-~/bin/chezmoi init --apply
+~/bin/chezmoi $args
 
 $ErrorActionPreference = $oldErrorActionPreference
