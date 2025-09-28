@@ -9,8 +9,9 @@ install.sh
 {{- end }}
 
 {{- if ne .chezmoi.os "windows" }}
+Documents/Powershell
+Documents/WindowsPowershell
 {{- end }}
-
 
 {{- if eq "" (lookPath "git") }}
 .gitconfig
