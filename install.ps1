@@ -13,6 +13,6 @@ if (!(Get-Command oh-my-posh -errorAction SilentlyContinue))
 }
 
 Write-Output "Running chezmoi"
-~/bin/chezmoi $args
+~/bin/chezmoi init --apply "$PSScriptRoot"
 
 $ErrorActionPreference = $oldErrorActionPreference
