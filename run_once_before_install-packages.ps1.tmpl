@@ -1,0 +1,9 @@
+{{ if eq .chezmoi.os "linux" -}}
+
+if (!(Get-Command oh-my-posh -errorAction SilentlyContinue))
+{
+    Write-Output "Installing oh-my-posh"
+    winget install JanDeDobbeleer.OhMyPosh -s winget
+}
+
+{{ end -}}
