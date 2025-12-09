@@ -20,6 +20,9 @@ Host gitlab.com
     ForwardAgent yes
     Hostname gitlab.com
     IdentitiesOnly yes
+
+Host *
+    IdentityFile ~/.ssh/identities/chrismlee42_gmail_com.rsa
     PreferredAuthentications publickey
 
 Host * !github.com !gitlab.com
@@ -29,5 +32,3 @@ Host * !github.com !gitlab.com
     #ControlMaster auto
     #ControlPersist 10m
     ForwardAgent yes
-    IdentityFile ~/.ssh/identities/labmonkey42_gmail_com.rsa
-    PreferredAuthentications publickey

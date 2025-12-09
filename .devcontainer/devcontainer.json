@@ -1,6 +1,7 @@
 {
     "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-24.04",
     "name": "dotfiles",
+    "postCreateCommand": "bash -e .devcontainer/postCreateCommand.sh",
     "customizations": {
         "vscode": {
             "extensions": [
@@ -13,10 +14,15 @@
                 // Support interacting with running devcontainers
                 "ms-azuretools.vscode-docker",
                 "ms-vscode-remote.remote-containers",
+                // Support Powershell scripting
+                "ms-vscode.powershell",
                 // YAML support
                 "redhat.vscode-yaml"
             ]
         }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/powershell:1": {}
     },
     "mounts": [
         // Support user 1password sessions

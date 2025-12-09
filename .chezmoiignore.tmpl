@@ -1,6 +1,19 @@
 README.md
 install.sh
 
+{{- if eq .chezmoi.os "windows" }}
+.bash_completion
+.bash_completion.d
+.bashrc
+.bashrc.kube
+.config/powershell
+{{- end }}
+
+{{- if ne .chezmoi.os "windows" }}
+Documents/Powershell
+Documents/WindowsPowershell
+{{- end }}
+
 {{- if eq "" (lookPath "git") }}
 .gitconfig
 .gitconfig.*
