@@ -1,32 +1,17 @@
+[commit]
+    gpgsign = true
+
 [core]
     sshCommand = ssh -i ~/.ssh/identities/chrismlee42_gmail_com.ed25519
+
+[gpg]
+    format = ssh
 
 [pull]
     rebase = true
 
 [user]
+    email = labmonkey42@gmail.com
+    name = Chris Lee
+    signingKey = ~/.ssh/identities/chrismlee42_gmail_com.ed25519
     useConfigOnly = true
-
-[includeIf "hasconfig:remote.*.url:git@github.com:chrismlee42/**"]
-    path = ~/.gitconfig.professional
-
-[includeIf "hasconfig:remote.*.url:git@github.com:labmonkey42/**"]
-    path = ~/.gitconfig.personal
-
-[includeIf "hasconfig:remote.*.url:git@github.com:morphacy/**"]
-    path = ~/.gitconfig.personal
-
-[includeIf "hasconfig:remote.*.url:git@github.com:mutinysoftware/**"]
-    path = ~/.gitconfig.professional
-
-[includeIf "hasconfig:remote.*.url:git@gitlab.com:chrismlee42/**"]
-    path = ~/.gitconfig.professional
-
-[includeIf "hasconfig:remote.*.url:git@gitlab.com:labmonkey42/**"]
-    path = ~/.gitconfig.personal
-
-[includeIf "hasconfig:remote.*.url:git@gitlab.com:morphacy/**"]
-    path = ~/.gitconfig.personal
-
-[includeIf "hasconfig:remote.*.url:git@gitlab.com:mutinysoftware/**"]
-    path = ~/.gitconfig.professional
