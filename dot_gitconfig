@@ -11,7 +11,7 @@
     rebase = true
 
 [user]
-    email = labmonkey42@gmail.com
+    email = chrismlee42@gmail.com
     name = Chris Lee
     signingKey = ~/.ssh/identities/labmonkey42_gmail_com.rsa
     useConfigOnly = true
